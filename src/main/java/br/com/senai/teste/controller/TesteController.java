@@ -1,15 +1,15 @@
 package br.com.senai.teste.controller;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController 
+@RestController
+public class TesteController {
 
-public  class TesteController{
-
-@GetMapping("/teste")
-
-public  String teste(){
-    return "Backend rodando na porta 8080";
-}
+    @GetMapping("/teste")
+    public String teste() {
+        return "Deu certo"
+        ;
+    }
 
 }
